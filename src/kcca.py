@@ -1,8 +1,8 @@
 import numpy
 from numpy import dot, eye, ones, zeros
 import scipy.linalg
-from kernel_icd import kernel_icd
-from kernels import LinearKernel
+from .kernel_icd import kernel_icd
+from .kernels import LinearKernel
 
 class KCCA(object):
     """An implementation of Kernel Canonical Correlation Analysis.
