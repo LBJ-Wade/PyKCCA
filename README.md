@@ -25,7 +25,7 @@ One can also install it using pip by running the following command::
 In this startup example, two artificially constructed datasets are created. The datasets depend on two latent variables.
 
     import numpy
-    from PykCCA.kernels import DiagGaussianKernel
+    from PykCCA.kernels import DiagGaussianKernel, LinearKernel
     from PykCCA import KCCA
 
     x1 = numpy.random.rand(100, 20)
