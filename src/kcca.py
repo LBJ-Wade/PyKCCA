@@ -464,12 +464,12 @@ if __name__ == "__main__":
                     scaler1=lambda x:x,
                     scaler2=lambda x:x).fit(x1,x2)
 
-    print "Done ",  cca.beta_
+    print("Done ",  cca.beta_)
 
     orig_y1 = cca.y1_
     orig_y2 = cca.y2_
 
-    print "Trying to test"
+    print("Trying to test")
     y1, y2 = cca.transform(x1, x2)
-    print numpy.allclose(y1, orig_y1)
-    print numpy.allclose(y2, orig_y2)
+    print(numpy.allclose(y1, orig_y1))
+    print(numpy.allclose(y2, orig_y2))
